@@ -99,7 +99,7 @@ void populate(map<int, int>* m1, map<int, int>* m2, map<int, int>* m3, ifstream&
 		split(str, ",", &v);
 		if (v.size() < 7)
 		{
-			cerr << "incorrect line: " << endl << str << endl;
+			cerr << "incorrect line 1: " << endl << str << endl;
 			continue;
 		}
 		dom = atoi(v[0].c_str());
@@ -132,7 +132,7 @@ void populate(map<int, int>* m1, map<int, int>* m2, map<int, int>* m3, map<strin
 		split(str, ",", &v);
 		if (v.size() < 7)
 		{
-			cerr << "incorrect line: " << endl << str << endl;
+			cerr << "incorrect line 2: " << endl << str << endl;
 			continue;
 		}
 
@@ -323,7 +323,7 @@ void populate(map<int, int>* m1, map<int, int>* m2, map<int, int>* m3, map<strin
 		split(str, ",", &v);
 		if (v.size() < 7)
 		{
-			cerr << "incorrect line: " << endl << str << endl;
+			cerr << "incorrect line 3: " << endl << str << endl;
 			continue;
 		}
 
