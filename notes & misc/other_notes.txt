@@ -1,5 +1,0 @@
-
-//
-The output of the COGcognitor program (see p. 3.2.3) is in the following format: "<prot-id>,<prot-length>,<prot-start>,<prot-end>,<cognitor-score>,<cluster-id>,...". The "<cognitor-score>" indicates the relative confidence in the assignment of the query protein fragment to the cluster.
-
-Warning: [psiblast] The parameter -num_descriptions is ignored for output formats > 4 . Use -max_target_seqs to control output
