@@ -34,3 +34,35 @@ cognitor_settings = {
 	"result_file" : main_directory + "results.COG.csv"
 	
 }
+
+main_directory = '../test2/triTemp/';
+
+cog_maker_settings = {
+	
+	#main main_directory for output and results 
+	"main_directory" : main_directory,
+	"genomes_directory" : genomes_directory, 
+
+	#hash and combined query csv temp files 
+	#These are required by the cog software 
+	"query_csv_file" : main_directory + "query.p2o.csv",
+
+	#blast Database
+	"query_db" : main_directory + "GenThree",
+
+	#query set
+	"subject_fa" : genomes_directory + "GenThree.fa",
+
+	# job file 
+	"job_file" : genomes_directory + "job_file.csv",
+
+	#lineage specific expansion file
+	"lse_output_file" : main_directory + "GenThree.cls.csv",
+
+	#final results file 
+	"result_file" : main_directory + "results.cls.csv",
+
+	#system options 
+	"num_threads" : 8,
+	
+}
