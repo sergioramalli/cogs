@@ -1,5 +1,6 @@
 
-main_directory = '../test2/cogTemp/';
+main_directory = '../single_gene_results/gene_set_test_3/data/';
+result_directory = '../single_gene_results/gene_set_test_3/';
 genomes_directory = '../genomes/';
 
 
@@ -15,13 +16,13 @@ cognitor_settings = {
 	"query_plus_subject_csv" : main_directory + "tmp.p2o.csv",
 
 	#query set
-	"subject_fa" : genomes_directory + "reduced.fa",
+	"subject_fa" : genomes_directory + "gene_set.fa",
 
-	#cogs to test against
+	#cogs to test against 
 	#ftp://ftp.ncbi.nih.gov/pub/COG/COG2014/data/cog2003-2014.csv
 	"cog_domains" : genomes_directory + "cogs.p2o.csv",
 	# ftp://ftp.ncbi.nih.gov/pub/COG/COG2014/data/prot2003-2014.fa.gz
-	"cog_domains_fa" : genomes_directory + "cogs_reduced.fa",
+	"cog_domains_fa" : genomes_directory + "cogs.fa",
 
 	#Blast Databases
 	"cogs_db" : main_directory + "COGs",
@@ -31,7 +32,7 @@ cognitor_settings = {
 	"num_threads" : 8,
 
 	#the result of your analysis 
-	"result_file" : main_directory + "results.COG.csv"
+	"result_file" : result_directory + "results.COG.csv"
 	
 }
 

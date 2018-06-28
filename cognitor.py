@@ -5,6 +5,9 @@ sys.dont_write_bytecode = True
 
 import os, shutil
 import subprocess 
+from shutil import copyfile
+
+##wrapper functions 
 from query2subjectFix import createFile
 from config import cognitor_settings
 
@@ -31,6 +34,8 @@ try:
 	    os.makedirs(cognitor_settings['main_directory'] + "BLASTconv")
 
 	createFile(cognitor_settings['query_csv_file'], cognitor_settings['subject_fa']);
+
+	copyfile(cognitor_settings['subject_fa'], cognitor_settings['main_directory'] + '/orignal_set.fa')
 
 	print('files reset');
 
